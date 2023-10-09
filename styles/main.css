@@ -35,7 +35,7 @@ body {
 }
 
 a {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: rgba(236, 225, 225, 0);
 }
 
 .animated {
@@ -50,3 +50,418 @@ a {
 .height-screen-helper {
   height: calc(100vh - 80px);
 }
+
+.headzone nav{
+  position:fixed;
+  width:100%;
+  top:0;
+  background-color:#FFFAFA;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  height:10vh;
+  z-index: 999;
+}
+.logo{
+  width:20%;
+  margin-left:3%;
+}
+.links{
+  width:50%;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+/*Top Section Styles*/
+#top{
+  height:85vh;
+  background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/header.jpg?raw=true');
+  margin-top:5%;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center top;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/*Farm Section Styles*/
+.container{
+  display:flex;
+  justify-content:space-around;
+  margin-top:5%;
+}
+.box{
+  width:20%;
+  border:3px solid #4f4f4f;
+  text-align:center;
+  padding:4%;
+  background-color:#fff;
+}
+.box h3{
+  margin: 15% 0;
+}
+
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* Adjust styles for links */
+.links a {
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #4F4F4F;
+  font-family: 'PT Sans', sans-serif;
+  transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+.links a:hover {
+  color: #fcb131; /* Change color on hover */
+}
+/*blank section styles*/
+
+.hero-image{
+  height:40vh;
+  background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/dirt.jpg?raw=true');
+  background-size:cover;
+  background-position:center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*About Section Styles*/
+#about{
+  display:flex;
+  justify-content:center;
+}
+.text{
+  width:60%;
+  border: 3px solid #4f4f4f;
+  background-color:#fff;
+  text-align:center;
+  padding:4%;
+}
+.text p{
+  text-align:left;
+}
+
+/*Gallery Section Styles*/
+
+.gallery{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.gallery div{
+  width:40%;
+  height:40vh;
+  margin:4% 0;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  display:flex;
+  align-items:flex-end;
+}
+.gallery div .hide{
+  width:70%;
+  height:10vh;
+  background-color:#fff;
+  display:none;
+}
+.gallery div .hide h2{
+      font-size:2.2rem;
+  }
+.gallery div:hover .hide{
+  display:block;
+}
+.farm{
+  background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/barn.jpg?raw=true');
+}
+.cook{
+  background-image:url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/cook.jpg?raw=true');
+}
+.produce{
+  background-image: url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/produce.jpg?raw=true');
+}
+.animals{
+  background-image: url('https://github.com/BrityHemming/farm-to-table-practice-project/blob/solution/farm-to-table/images/sheep.jpg?raw=true');
+}
+
+/*Contact Section Styles*/
+#contact{
+  display:flex;
+  flex-wrap:wrap;
+}
+#contact h2{
+  width:100%;
+}
+.left, .right{
+  width:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:4% 0;
+}
+.contact-info{
+  width:35%;
+  line-height:2;
+}
+.contact-info h3{
+  text-align:left;
+}
+.img-container{
+  width:70%;
+}
+
+/*Footer Section Styles*/
+
+footer{
+  background-color:#fcb131;
+  display:flex;
+  justify-content:space-around;
+  color:#fff;
+  padding:2% 0;
+}
+footer a{
+  color:#fff;
+}
+footer a:hover{
+  color:#4f4f4f;
+}
+footer div{
+  width:30%;
+}
+nav.social{
+  display:flex;
+  justify-content: space-between;
+  margin-top:10%;
+}
+nav.main{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+nav.main a{
+  margin: 2% 0;
+}
+.copyright{
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+}
+
+/*Media Queries*/
+/*Tablet*/
+@media (max-width: 800px){
+  .links{
+      width:70%;
+  }
+  #about .text{
+      width:80%;
+  }
+  .gallery div .hide{
+      background-color:#fff;
+      display:block;
+      width:70%;
+  }
+  .gallery div .hide h2{
+      font-size:2.2rem;
+  }
+  .contact-info{
+      width:50%;
+  }
+  .img-container{
+      width:80%;
+  }
+  .left{
+      width:60%;
+  }
+  .right{
+      width:40%;
+  }
+}
+
+/*phone*/
+@media (max-width: 500px){
+  header nav{
+      flex-direction:column;
+      height:18vh;
+  }
+  .links{
+      width:100%;
+  }
+  .logo{
+      text-align:center;
+  }
+  .titles{
+      background-color:rgba(255, 255, 255, 0.8);
+  }
+  .container{
+      flex-wrap:wrap;
+  }
+  .box{
+      width:90%;
+      margin:4% 0;
+  }
+  #about .text{
+      width:90%;
+  }
+  .gallery div{
+      width:90%;
+  }
+  #contact{
+      justify-content: center;
+  }
+  .left, .right{
+      width:90%;
+  }
+  .right{
+      order:-1;
+  }
+  #contact h2{
+      order:-2;
+  }
+  .img-container{
+      width:90%;
+  }
+  .contact-info{
+      width:90%;
+  }
+  footer{
+      flex-wrap:wrap;
+  }
+  footer div{
+      width:90%;
+      margin:4% 0;
+  }
+  .copyright{
+      justify-content:flex-start;
+  }
+}
+
+/* //subscription page */
+
+/* Add this CSS to your stylesheets or style tags */
+.subscription-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px; /* Add negative margin to counteract child element margin */
+}
+
+.product-card {
+  flex: 0 1 calc(33.33% - 20px); /* Adjust the width as needed */
+  margin: 10px; /* Add some spacing between cards */
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s; /* Add a smooth transition effect */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Scale up the card on hover */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Enhance the box shadow on hover */
+}
+
+
+#checkout-and-portal-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, transform 0.2s;
+
+}
+
+#checkout-and-portal-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Scale up on hover */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow on hover */
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    flex: 0 1 calc(50% - 20px); /* Adjust the width for smaller screens */
+  }
+}
+
+
+/* mission page styles */
+
+
+.mission-content {
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-left: 7rem;
+  margin-right:7rem; 
+}
+
+
+.values-section,
+.join-us-section {
+ padding: 20px;
+  margin-top:9rem;
+  margin-bottom:.1rem;
+  border-radius: 5px;
+ 
+ 
+ 
+}
+
+.values-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.values-section li {
+  margin-top:45px;
+  margin-bottom: 25px;
+  margin-left: 7rem;
+  margin-right:7rem;
+
+}
+
+.values-section strong {
+  color: #007bff;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  margin-top: 0;
+}
+
+/* Button styles */
+.button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional paragraph styles */
+p {
+  margin-bottom: 20px;
+}
+
